@@ -21,9 +21,11 @@ const Home = () => {
       <Hero />
       
       <Info {...homeObjOne}/>
-      <Info {...homeObjTwo}/>
       <Services />
+      <Info {...homeObjTwo}/>
+      
       <Info {...homeObjThree}/>
+      
       <Footer />
     </>
   )
