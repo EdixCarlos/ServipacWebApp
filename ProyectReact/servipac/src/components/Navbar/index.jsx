@@ -53,6 +53,11 @@ const Navbar = ({ toggle }) => {
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
               >CONTACTANOS</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to='blog'
+              smooth={false} duration={500} spy={true} exact='true' offset={-80}
+              >BLOG</NavLinks>
+            </NavItem>
           </NavMenu>
           <NavBtn>
             <NavBtnLink to='/signin'>INICIAR SESION</NavBtnLink>
