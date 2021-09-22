@@ -81,6 +81,20 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #005EA5
   }
 `
+export const NavBlog = styled(LinkR)`
+  color: #005EA5;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid #005EA5
+  }
+`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
