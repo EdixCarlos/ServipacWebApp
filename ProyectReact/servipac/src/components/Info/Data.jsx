@@ -1,3 +1,29 @@
+import React, {useEffect} from 'react'
+import { collection, getDocs } from "firebase/firestore";
+import db from '../../firebaseconfig'
+  
+  // https://www.youtube.com/watch?v=s_Txhh-clVk
+  const Data = () => {
+    useEffect(()=>{
+      const obtenerDatos = async()=>{
+        const datos = await getDocs(collection(db,'users'));
+        datos.forEach((documento)=>{
+          console.log(documento.data())
+        })
+      }
+      obtenerDatos()
+        
+
+    },[])
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+  
+  export default Data
+  
 export const homeObjOne = {
   id: 'proyects',
   lightBg: false,
